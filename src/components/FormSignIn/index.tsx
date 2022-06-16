@@ -49,7 +49,7 @@ const FormSignIn = () => {
       })) as SignInResponse | undefined;
 
       if (result?.status === 200) {
-        routes.push("/");
+        routes.push("/beers");
       }
 
       setLoading(false);
