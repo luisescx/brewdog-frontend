@@ -7,11 +7,6 @@ export default {
   argTypes: {
     children: {
       type: "string"
-    },
-    minimal: {
-      control: {
-        type: "boolean"
-      }
     }
   }
 } as Meta<ButtonProps>;
