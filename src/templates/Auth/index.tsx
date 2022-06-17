@@ -13,7 +13,7 @@ const Auth = ({ title, children }: AuthProps) => (
     <S.BannerBlock>
       <Image
         src="/img/auth-bg.jpg"
-        alt="Won Games Auth Page"
+        alt="Beer Auth Page"
         layout="fill"
         objectFit="cover"
       />
@@ -32,7 +32,7 @@ const Auth = ({ title, children }: AuthProps) => (
         <S.ImageWrapper>
           <Image
             src="/img/logo.png"
-            alt="Won Games Auth Page"
+            alt="Beer Auth Page"
             width={128}
             height={128}
           />
