@@ -8,5 +8,9 @@ module.exports = {
   framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-webpack5"
+  },
+  webpackFinal: (config) => {
+    config.resolve.modules.push(`${process.cwd()}/src`);
+    return config;
   }
 };
