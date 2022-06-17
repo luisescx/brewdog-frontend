@@ -11,6 +11,13 @@ export const Wrapper = styled.div`
   `}
 `;
 
+export const ImageContainer = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.primary};
+    padding: 0.8rem 0;
+  `}
+`;
+
 export const ImageBox = styled.div`
   ${({ theme }) => css`
     min-height: 30rem;

@@ -20,5 +20,6 @@ export const Default: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 Default.args = {
   children: "BrewDog",
-  color: "black"
+  color: "white",
+  lineLeft: true
 };

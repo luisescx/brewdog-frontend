@@ -70,6 +70,7 @@ const FormSignUp = () => {
           if (result?.status === 200) {
             routes.push("/");
           }
+          return;
         }
 
         setFormError(DEFAULT_ERROR_MSG);

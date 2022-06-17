@@ -1,12 +1,19 @@
 import Image from "next/image";
+import { useMemo } from "react";
 import * as S from "./styles";
 
 const BeerCard = ({ name, description, imageUrl, firstBrewed }: Beer) => {
+  const image = useMemo(() => {
+    return imageUrl ? imageUrl : "/img/logo.png";
+  }, [imageUrl]);
+
   return (
     <S.Wrapper>
-      <S.ImageBox>
-        <Image src={imageUrl} alt={name} layout="fill" objectFit="contain" />
-      </S.ImageBox>
+      <S.ImageContainer>
+        <S.ImageBox>
+          <Image src={image} alt={name} layout="fill" objectFit="contain" />
+        </S.ImageBox>
+      </S.ImageContainer>
 
       <S.Content>
         <S.Info>
