@@ -1,33 +1,22 @@
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in NextJs projects.
+# BrewDog Beers
 
-## What is inside?
+Projeto que usa a API pública <a href="https://punkapi.com/documentation/v2">Punkapi</a> para fazer a listagem das cervejas da cervejaria BrewDog e uma <a href="https://github.com/luisescx/brewdog-back">API</a> para fazer a autenticação do usuário.
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+![](/public/img/preview.png)
 
-First, run the development server:
+### Tecnologias utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- NextJS
+- Typescript
+- Styled-components
+- Storybook
+- Axios
+- Next-auth
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como executar
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+A rota das listagens das cervejas é uma rota autenticada e o projeto depende que api <a href="https://github.com/luisescx/brewdog-back">Brewdog-back</a> esteja sendo executada para fazer a autenticação do usuário, sem a API será possível acessar apenas as rotas de `sign-in` e `sign-up`.
 
-## Commands
-
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+- Clonar o projeto e na pasta raiz executar o comando `yarn` para instalar as dependências.
+- Rodar o projeto com o comando `yarn dev`.
+- Para rodar o storybook executar o comando `yarn storybook` na pasta raiz em outra aba do terminal.
