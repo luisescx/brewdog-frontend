@@ -19,6 +19,26 @@ export const Wrapper = styled.div`
   `};
 `;
 
+export const HeaderWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Link = styled.a`
+  ${({ theme }) => css`
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: ${theme.colors.primary};
+
+    &:hover {
+      color: ${theme.colors.white};
+    }
+  `}
+`;
+
 export const Content = styled.section`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.xxlarge};
