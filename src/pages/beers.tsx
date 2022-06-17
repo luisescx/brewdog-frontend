@@ -1,23 +1,24 @@
 import { GetServerSidePropsContext } from "next";
-import { signOut } from "next-auth/react";
+import BeersTemplate from "templates/Beers/BeersTemplate";
+import { getBeers } from "useCases/getBeers";
 import protectedRoutes from "utils/protected-routes";
 
-export default function Beers() {
-  return (
-    <button
-      onClick={async () => {
-        await signOut({ redirect: true, callbackUrl: "/sign-in" });
-      }}
-    >
-      Sign Out
-    </button>
-  );
+type BeersProps = {
+  beers: Beer[];
+};
+
+export default function Beers({ beers }: BeersProps) {
+  return <BeersTemplate beers={beers} />;
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   await protectedRoutes(context);
 
+  const beers = await getBeers();
+
   return {
-    props: {}
+    props: {
+      beers
+    }
   };
 }
