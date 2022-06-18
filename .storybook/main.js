@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 module.exports = {
   stories: ["../src/components/**/stories.tsx"],
   addons: [
@@ -9,8 +10,11 @@ module.exports = {
   core: {
     builder: "@storybook/builder-webpack5"
   },
-  webpackFinal: (config) => {
+  webpackFinal: async (config) => {
     config.resolve.modules.push(`${process.cwd()}/src`);
+
+    config.resolve.alias["next/image"] = require.resolve("./NextImage.js");
+
     return config;
   }
 };

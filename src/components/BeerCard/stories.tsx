@@ -8,7 +8,8 @@ export default {
     name: "Trashy Blonde",
     description:
       "Japanese citrus fruit intensifies the sour nature of this German classic.",
-    firstBrewed: "04/2008"
+    firstBrewed: "04/2008",
+    imageUrl: "https://images.punkapi.com/v2/2.png"
   }
 } as Meta<Beer>;
 
