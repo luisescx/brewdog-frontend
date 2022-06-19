@@ -17,6 +17,7 @@ Projeto que usa a API pública <a href="https://punkapi.com/documentation/v2">Pu
 
 A rota das listagens das cervejas é uma rota autenticada e o projeto depende que api <a href="https://github.com/luisescx/brewdog-back">Brewdog-back</a> esteja sendo executada para fazer a autenticação do usuário, sem a API será possível acessar apenas as rotas de `sign-in` e `sign-up`.
 
+- Devido a algumas dependências, é necessário estar com a versão do node >=14. <a href="https://nodejs.org/en/">Link node LTS</a> ou usar o NVM de acordo com o seu SO para alterar entre as versões do node.
 - Clonar o projeto e na pasta raiz executar o comando `yarn` para instalar as dependências.
 - Rodar o projeto com o comando `yarn dev`.
 - Para rodar o storybook executar o comando `yarn storybook` na pasta raiz em outra aba do terminal.
