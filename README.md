@@ -1,10 +1,10 @@
 # BrewDog Beers
 
-Projeto que usa a API pública <a href="https://punkapi.com/documentation/v2">Punkapi</a> para fazer a listagem das cervejas da cervejaria BrewDog e uma <a href="https://github.com/luisescx/brewdog-back">API</a> para fazer a autenticação do usuário.
+Project that uses a public API <a href="https://punkapi.com/documentation/v2">Punkapi</a> to list the beers from the BrewDog brewery and an <a href="https://github.com/luisescx/brewdog-back">API</a> to authenticate the user.
 
 ![](/public/img/preview.png)
 
-### Tecnologias utilizadas
+### Technologies
 
 - NextJS
 - Typescript
@@ -13,11 +13,11 @@ Projeto que usa a API pública <a href="https://punkapi.com/documentation/v2">Pu
 - Axios
 - Next-auth
 
-## Como executar
+## How to run
 
-A rota das listagens das cervejas é uma rota autenticada e o projeto depende que api <a href="https://github.com/luisescx/brewdog-back">Brewdog-back</a> esteja sendo executada para fazer a autenticação do usuário, sem a API será possível acessar apenas as rotas de `sign-in` e `sign-up`.
+The beers route is an authenticated route and depends on the API <a href="https://github.com/luisescx/brewdog-back">Brewdog-back</a> to authenticate the user, without the running API is gonna be possible to access only the `sign-in` and `sign-up` routes.
 
-- Devido a algumas dependências, é necessário estar com a versão do node >=14. <a href="https://nodejs.org/en/">Link node LTS</a> ou usar o NVM de acordo com o seu SO para alterar entre as versões do node.
-- Clonar o projeto e na pasta raiz executar o comando `yarn` para instalar as dependências.
-- Rodar o projeto com o comando `yarn dev`.
-- Para rodar o storybook executar o comando `yarn storybook` na pasta raiz em outra aba do terminal.
+- Due to some dependencies, it is necessary to have node >=14 version.
+- Clone the project and in the root folder execute `yarn` to install the dependencies.
+- Run the project with `yarn dev`.
+- To run the storybook execute `yarn storybook`.
